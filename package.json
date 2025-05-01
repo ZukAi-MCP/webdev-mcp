@@ -1,0 +1,51 @@
+{
+	"name": "webdev-mcp",
+	"version": "0.1.2",
+	"description": "An MCP server that provides useful web development tools via MCP server",
+	"module": "index.ts",
+	"bin": {
+		"webdev-mcp": "./build/index.js"
+	},
+	"files": [
+		"build"
+	],
+	"scripts": {
+		"build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+		"check": "bunx biome check --write .",
+		"start": "node build/index.js",
+		"bump": "npm version patch --no-git-tag-version",
+		"prepublishOnly": "bun check && npm run build && npm run bump",
+		"push": "npm run build && npm publish"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "latest",
+		"@types/node": "^22.13.5"
+	},
+	"peerDependencies": {
+		"typescript": "^5.7.3"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.6.0",
+		"dotenv": "^16.4.7",
+		"sharp": "^0.33.5",
+		"zod": "^3.24.2"
+	},
+	"keywords": [
+		"mcp",
+		"webdev",
+		"web",
+		"development",
+		"tools"
+	],
+	"author": "",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zueai/webdev-mcp"
+	},
+	"engines": {
+		"node": ">=18"
+	}
+}
