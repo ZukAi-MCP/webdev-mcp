@@ -178,6 +178,7 @@ Programmatically assemble prompts for LLMs using [GenAIScript](https://microsoft
 
 **Key features:**
 
+
 * Expose MCP functionality to Goose through tools.
 * MCPs can be installed directly via the [extensions directory](https://block.github.io/goose/v1/extensions/), CLI, or UI.
 * Goose allows you to extend its functionality by [building your own MCP servers](https://block.github.io/goose/docs/tutorials/custom-extensions).
