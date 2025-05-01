@@ -2,6 +2,10 @@
 
 An MCP server that provides useful web development tools.
 
+<a href="https://glama.ai/mcp/servers/@ZukAi-MCP/webdev-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@ZukAi-MCP/webdev-mcp/badge" alt="webdev-mcp MCP server" />
+</a>
+
 ## Usage
 
 ### Cursor
@@ -52,4 +56,3 @@ The tool will return the screenshot as a base64 encoded string.
 ## Tips
 
 Make sure YOLO mode is on and MCP tools protection is off in your Cursor settings for the best experience. You might have to allow Cursor to record your screen on MacOS.
-
