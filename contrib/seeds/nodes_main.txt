@@ -1,0 +1,1 @@
+130.208.71.203 # Fixed seed from old Smileycoin wallet 0xcb47d082
